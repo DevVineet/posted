@@ -1,6 +1,6 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1>Posted</h1>
+<p>Lets you post something to a global feed. Other users can react on those posts.</p>
+<br/><br/>
 
 ## Available Scripts
 
