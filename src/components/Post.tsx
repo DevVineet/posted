@@ -17,10 +17,10 @@ export const Post = ({
   date,
   keyword = "cars",
 }: Post) => (
-  <div className="m-2 overflow-hidden border-b border-dashed border-gray-300">
+  <div className="m-2 overflow-hidden border-b border-dashed border-gray-300 p-4">
     {num % 3 === 0 && (
       <img
-        className="w-full bg-gray-200"
+        className="w-full bg-gray-200 rounded-xl"
         src={`https://source.unsplash.com/random/600x${400 + num}?${keyword}`}
         alt=""
       />
