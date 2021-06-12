@@ -45,7 +45,7 @@ const Content = () => {
         </div>
       </div>
       <div className="w-5/12">
-        <div className="fixed h-screen overflow-auto">
+        <div className="w-80 fixed h-screen overflow-auto">
           <div className="m-4 sticky top-0">
             <input
               type="text"

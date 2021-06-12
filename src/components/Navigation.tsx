@@ -13,7 +13,6 @@ export const Navigation = () => {
       <Link icon={explore} name="Explore" />
       <Link icon={message} name="Messages" />
       <Link icon={user} name="Profile" />
-      <Link icon={home} name="Home" />
       <button className="p-3 bg-green-500 text-white rounded-md w-full text-md">
         New post
       </button>
