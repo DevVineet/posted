@@ -8,7 +8,7 @@ var chance = new Chance();
 export const Message = () => {
   return (
     <>
-      <div className="w-7/12 border-r">
+      <div className="hidden md:block md:w-7/12 border-r">
         <div className="m-4">
           <h1 className="text-xl font-medium">Messages</h1>
         </div>
@@ -31,8 +31,11 @@ export const Message = () => {
             })}
         </div>
       </div>
-      <div className="w-5/12">
-        <div className="w-80 fixed h-screen overflow-auto">
+      <div className="w-12/12">
+        <div className="">
+          <div className="m-4">
+            <h1 className="text-xl font-medium">Messages</h1>
+          </div>
           <div className="p-4 sticky top-0 bg-white">
             <input
               type="text"

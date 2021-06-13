@@ -17,14 +17,14 @@ export const Post = ({
   date,
   keyword = "cars",
 }: Post) => (
-  <div className="m-2 overflow-hidden border-b border-dashed border-gray-300 p-4">
+  <div className="m-2 overflow-hidden border-b border-dashed border-gray-300 p-2 lg:p-4">
     <img
       className="w-full bg-gray-200 rounded-xl"
       src={`https://source.unsplash.com/random/600x${400 + num}?${keyword}`}
       alt=""
     />
-    <div className="p-4">
-      <p className="text-md py-2">{content}</p>
+    <div className="p-1 lg:p-4">
+      <p className="text-sm lg:text-md py-2">{content}</p>
       <div className="text-gray-600 flex text-xs justify-between">
         <span>{author}</span>
         <span>{date}</span>

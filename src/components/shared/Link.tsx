@@ -1,21 +1,21 @@
-import React from "react";
+import React, { FC } from "react";
 import { NavLink as L } from "react-router-dom";
 interface Link {
   name: string;
-  icon: any;
+  Icon: FC;
   path: string;
 }
 
-export const Link = ({ name, icon, path = "/" }: Link) => {
+export const Link = ({ name, Icon, path = "/" }: Link) => {
   return (
     <L
       to={path}
-      className="flex flex-row items-center rounded-md hover:bg-gray-100 p-4"
-      activeClassName="bg-gray-100"
+      className="flex space-x-3 font-medium text-gray-600 hover:font-bold py-4 px-2"
+      activeClassName="text-green-500"
       exact
     >
-      <img src={icon} alt="" className="w-6 h-6 mr-2" />
-      <span>{name}</span>
+      <Icon />
+      <span className="hidden lg:block">{name}</span>
     </L>
   );
 };

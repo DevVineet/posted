@@ -8,7 +8,7 @@ var chance = new Chance();
 export const Home = () => {
   return (
     <>
-      <div className="w-7/12 border-r">
+      <div className="md:w-8/12 border-r">
         <div className="m-4">
           <h1 className="text-xl font-medium">Home</h1>
         </div>
@@ -32,8 +32,8 @@ export const Home = () => {
             })}
         </div>
       </div>
-      <div className="w-5/12">
-        <div className="w-80 fixed h-screen overflow-auto">
+      <div className="hidden md:block md:w-4/12">
+        <div className="h-screen overflow-auto sticky top-0 flex-shrink-0">
           <div className="p-4 sticky top-0 bg-white">
             <input
               type="text"
