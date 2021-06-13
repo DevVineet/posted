@@ -5,14 +5,13 @@ import { PostBox } from "../components/PostBox";
 var Chance = require("chance");
 var chance = new Chance();
 
-export const Home = () => {
+export const Message = () => {
   return (
     <>
       <div className="w-7/12 border-r">
         <div className="m-4">
-          <h1 className="text-xl font-medium">Home</h1>
+          <h1 className="text-xl font-medium">Messages</h1>
         </div>
-        <PostBox />
         <div>
           {Array(10)
             .fill(0)
