@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { NavLink as L } from "react-router-dom";
 interface Link {
   name: string;
-  Icon: FC;
+  Icon: any;
   path: string;
 }
 
@@ -14,7 +14,7 @@ export const Link = ({ name, Icon, path = "/" }: Link) => {
       activeClassName="text-green-500"
       exact
     >
-      <Icon />
+      <Icon className="h-6 w-6" />
       <span className="hidden lg:block">{name}</span>
     </L>
   );
