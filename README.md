@@ -1,9 +1,10 @@
 <h1>Posted</h1>
 <p>Lets you post something to a global feed. Other users can react on those posts.</p>
-<br/><br/>
 
+[View Demo](https://posted-demo.netlify.app/)
 
-
+<br/>
+<br/>
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
