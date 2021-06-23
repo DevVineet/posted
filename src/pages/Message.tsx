@@ -8,9 +8,9 @@ var chance = new Chance();
 export const Message = () => {
   return (
     <>
-      <div className="hidden md:block md:w-7/12 border-r">
+      <div className="hidden md:block md:w-7/12 border-r dark:border-gray-800">
         <div className="m-4">
-          <h1 className="text-xl font-medium">Messages</h1>
+          <h1 className="text-xl font-medium dark:text-white">Messages</h1>
         </div>
         <div>
           {Array(10)
@@ -31,16 +31,18 @@ export const Message = () => {
             })}
         </div>
       </div>
-      <div className="w-12/12">
-        <div className="">
+      <div className="w-12/12 md:w-5/12 flex-grow-0">
+        <div className="h-screen overflow-auto sticky top-0">
           <div className="m-4">
-            <h1 className="text-xl font-medium">Messages</h1>
+            <h1 className="text-xl font-medium dark:text-white">
+              Popular post
+            </h1>
           </div>
-          <div className="p-4 sticky top-0 bg-white">
+          <div className="p-4 sticky top-0 bg-white dark:bg-gray-900">
             <input
               type="text"
               placeholder="Search for post"
-              className="p-4 py-2 border w-full box-border rounded-md"
+              className="p-4 py-2 border w-full box-border rounded-md dark:bg-gray-800 dark:border-gray-900"
             />
           </div>
           <div>
@@ -53,18 +55,18 @@ export const Message = () => {
               date={chance.birthday({ string: true, american: false })}
             />
             <Post
-              key={1}
+              key={2}
               keyword="mountains"
               num={2}
-              content={chance.paragraph({ sentences: 1 })}
+              content={chance.paragraph({ sentences: 4 })}
               author={chance.word({ word: 5 })}
               date={chance.birthday({ string: true, american: false })}
             />
             <Post
-              key={1}
+              key={3}
               keyword="lakes"
               num={3}
-              content={chance.paragraph({ sentences: 1 })}
+              content={chance.paragraph({ sentences: 2 })}
               author={chance.word({ word: 5 })}
               date={chance.birthday({ string: true, american: false })}
             />

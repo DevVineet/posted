@@ -10,8 +10,8 @@ export const Link = ({ name, Icon, path = "/" }: Link) => {
   return (
     <L
       to={path}
-      className="flex space-x-3 font-medium text-gray-600 hover:font-bold py-4 px-2"
-      activeClassName="text-green-500"
+      className="flex space-x-3 font-medium text-gray-600 dark:text-gray-400 hover:font-bold py-4 px-2"
+      activeClassName="text-green-500 dark:text-green-500"
       exact
     >
       <Icon className="h-6 w-6" />

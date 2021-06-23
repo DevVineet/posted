@@ -8,9 +8,9 @@ var chance = new Chance();
 export const Home = () => {
   return (
     <>
-      <div className="md:w-8/12 border-r">
+      <div className="md:w-8/12 border-r dark:border-gray-800">
         <div className="m-4">
-          <h1 className="text-xl font-medium">Home</h1>
+          <h1 className="text-xl font-medium dark:text-white">Home</h1>
         </div>
         <PostBox />
         <div>
@@ -34,11 +34,11 @@ export const Home = () => {
       </div>
       <div className="hidden md:block md:w-4/12">
         <div className="h-screen overflow-auto sticky top-0 flex-shrink-0">
-          <div className="p-4 sticky top-0 bg-white">
+          <div className="p-4 sticky top-0 bg-white dark:bg-gray-900">
             <input
               type="text"
               placeholder="Search for post"
-              className="p-4 py-2 border w-full box-border rounded-md"
+              className="p-4 py-2 border w-full box-border rounded-md dark:border-gray-900 dark:bg-gray-800"
             />
           </div>
           <div>
